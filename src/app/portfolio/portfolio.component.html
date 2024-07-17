@@ -1,0 +1,37 @@
+<section id="portfolio" class="py-4">
+    <div class="container">
+        <h2 class="fw-bolder text-center mb-3">PORTFOLIO COMPONENT</h2>
+
+        <div class="text-center d-flex align-items-center justify-content-center my-3">
+          <div class="line"></div>
+      <div class="for-icon">
+          <i class="fa-solid fa-star mt-1 mx-3"></i>
+      </div>
+      <div class="line"></div>   
+      </div>
+        
+        <div class="row gy-4">
+
+            <div class="col-md-4" *ngFor="let item of srcs">
+              <div class="for-img position-relative">
+                <img  
+                [src]="item" 
+                alt="img 1 "
+                 class="w-100 rounded-3"
+                 />
+
+                 <div (click)="flag = false; modelImg=item" 
+                 class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-plus fa-5x text-white"></i>
+                 </div>
+              </div>
+            </div>      
+          
+        </div>
+    </div>
+</section>
+
+<div (click)="hideModel($event.target, img)" [class.d-none]="flag"
+class="model position-fixed top-0 start-0 end-0 bottom-0 bg-layer bg-opacity-25 d-flex justify-content-center align-items-center">
+  <img [src]="modelImg" alt="image" class="w-50" #img/>
+</div>

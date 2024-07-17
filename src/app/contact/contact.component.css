@@ -1,0 +1,29 @@
+
+#contact i,h2{
+    color: #2C3E50;
+}
+#contact h2{
+    font-size: 40px;
+}
+.form-control{
+    border: 0;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+button{
+    background-color: #1ABC9C;
+}
+.line{
+    width: 100px;
+    height: 4px;
+    background-color:#2C3E50 ;
+}
+label{
+    color: #1ABC9C;
+    transition: top 0.6s;
+}
+
+._top{
+    top: 35px !important;
+}

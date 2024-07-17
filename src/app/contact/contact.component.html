@@ -1,0 +1,58 @@
+<section id="contact" class="py-4">
+    <div class="container">
+        <h2 class="fw-bolder text-center mb-3">CONTACT SECTION</h2>
+
+            <div class="text-center d-flex align-items-center justify-content-center my-3">
+                <div class="line"></div>
+            <div class="for-icon">
+                <i class="fa-solid fa-star mt-1 mx-3"></i>
+            </div>
+            <div class="line"></div>   
+            </div>    
+
+        </div>
+        
+        <div class="row py-5">
+            <form class="text-center">
+                <label for="user-name" class="position-relative top-0" [class._top]="!userName.length">userName:</label>
+                <input [(ngModel)]="userName"
+                 id="user-name"
+                 type="text"
+                 name="userName"
+                 value=""
+                 placeholder="userName"
+                 class="form-control w-50 mx-auto border-bottom py-2 position-relative"
+                />
+                
+                <label for="user-age" class="position-relative top-0" [class._top]="!userAge.length">userAge:</label>
+                <input [(ngModel)]="userAge"
+                id="user-age"
+                 type="text"
+                 name="userAge"
+                 value=""
+                 placeholder="userAge"
+                 class="form-control w-50 mx-auto border-bottom py-2 position-relative"
+                />
+                <label for="user-email" class="position-relative top-0" [class._top]="!userEmail.length">userEmail:</label>
+                <input [(ngModel)]="userEmail"
+                id="user-email"
+                 type="email"
+                 name="userEmail"
+                 value=""
+                 placeholder="userEmail"
+                 class="form-control w-50 mx-auto border-bottom my-2 py-2 position-relative"
+                />
+                <label for="user-password" class="position-relative top-0" [class._top]="!userPassword.length">userPassword:</label>
+                <input [(ngModel)]="userPassword"
+                id="user-password"
+                 type="password"
+                 name="userPassword"
+                 value=""
+                 placeholder="userPassword"
+                 class="form-control w-50 mx-auto border-bottom py-2 position-relative"
+                />
+                <button class="border-0 text-white px-3 py-2 rounded my-4" >Send Message</button>
+            </form>
+
+        </div>
+</section>

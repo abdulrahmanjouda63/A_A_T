@@ -1,0 +1,19 @@
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+#last-section{
+    background-color: #2C3E50;
+    padding: 70px 0px;
+}
+.social-icons .icon{
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+footer{
+    background-color: #1A252F;
+}
