@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     PortfolioComponent,
     ContactComponent,
+    GalleryComponent,
     NavbarComponent,
     NotFoundComponent,
     FooterComponent,
